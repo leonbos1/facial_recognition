@@ -9,8 +9,8 @@ email = file = open("tapo_username.txt", "r").read()
 pw = file = open("tapo_password.txt", "r").read()
 ip_address = '192.168.68.139'
 
-mqtt_username = file = open("mqtt_username.txt", "r").read()
-mqtt_password = file = open("mqtt_password.txt", "r").read()
+mqtt_username = file = open("mqtt_username.txt", "r").read().strip().replace("\n", "")
+mqtt_password = file = open("mqtt_password.txt", "r").read().strip().replace("\n", "")
 
 MQTT_BROKER = "192.168.68.131"
 MQTT_PORT = 1883
