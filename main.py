@@ -59,8 +59,8 @@ def main():
     process_this_frame = True
     leon_is_present = False
     absence_timer_started = False
-    absent_time_threshold = 20
-    process_frame_interval = 2
+    absent_time_threshold = 10
+    process_frame_interval = 0.5
     last_frame_time = time.time()
     debug = False
 
