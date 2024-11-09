@@ -5,8 +5,8 @@ import numpy as np
 import paho.mqtt.client as mqtt
 import time
 
-email = file = open("tapo_username.txt", "r").read()
-pw = file = open("tapo_password.txt", "r").read()
+email = file = open("tapo_username.txt", "r").read().strip().replace("\n", "")
+pw = file = open("tapo_password.txt", "r").read().strip().replace("\n", "")
 ip_address = '192.168.68.139'
 
 mqtt_username = file = open("mqtt_username.txt", "r").read().strip().replace("\n", "")
